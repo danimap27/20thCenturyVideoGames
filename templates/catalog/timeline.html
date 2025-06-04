@@ -6,7 +6,7 @@
   {% for obj in object_list %}
   <li class="list-group-item">
     {% with photo=obj.photos.first %}
-        {% if photo %}{% thumbnail photo.image "150x100" crop="center" as im %}<img src="{{ im.url }}" class="me-2" />{% endthumbnail %}{% endif %}
+        {% if photo %}{% thumbnail photo.image "150x100" crop="center" as im %}<img src="{{ im.url }}" class="me-2" alt="{{ photo.caption }}" />{% endthumbnail %}{% endif %}
     {% endwith %}
     <a href="{{ obj.get_absolute_url }}">{{ obj.name }} ({{ obj.release_year }})</a>
   </li>

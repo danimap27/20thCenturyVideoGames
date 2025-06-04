@@ -8,18 +8,18 @@ from .forms import ConsoleForm, ComputerForm, VideoGameForm, BoardGameForm
 from .filters import ConsoleFilter, ComputerFilter, VideoGameFilter, BoardGameFilter
 
 
-class IndexView(LoginRequiredMixin, generic.TemplateView):
+class IndexView(generic.TemplateView):
     template_name = "catalog/index.html"
 
 
-class ConsoleListView(LoginRequiredMixin, FilterView):
+class ConsoleListView(FilterView):
     model = Console
     paginate_by = 10
     filterset_class = ConsoleFilter
     template_name = "catalog/console_list.html"
 
 
-class ConsoleDetailView(LoginRequiredMixin, generic.DetailView):
+class ConsoleDetailView(generic.DetailView):
     model = Console
     template_name = "catalog/console_detail.html"
 
@@ -44,14 +44,14 @@ class ConsoleDeleteView(LoginRequiredMixin, generic.DeleteView):
     success_url = reverse_lazy("catalog:console_list")
 
 
-class ComputerListView(LoginRequiredMixin, FilterView):
+class ComputerListView(FilterView):
     model = Computer
     paginate_by = 10
     filterset_class = ComputerFilter
     template_name = "catalog/computer_list.html"
 
 
-class ComputerDetailView(LoginRequiredMixin, generic.DetailView):
+class ComputerDetailView(generic.DetailView):
     model = Computer
     template_name = "catalog/computer_detail.html"
 
@@ -76,14 +76,14 @@ class ComputerDeleteView(LoginRequiredMixin, generic.DeleteView):
     success_url = reverse_lazy("catalog:computer_list")
 
 
-class VideoGameListView(LoginRequiredMixin, FilterView):
+class VideoGameListView(FilterView):
     model = VideoGame
     paginate_by = 10
     filterset_class = VideoGameFilter
     template_name = "catalog/videogame_list.html"
 
 
-class VideoGameDetailView(LoginRequiredMixin, generic.DetailView):
+class VideoGameDetailView(generic.DetailView):
     model = VideoGame
     template_name = "catalog/videogame_detail.html"
 
@@ -108,14 +108,14 @@ class VideoGameDeleteView(LoginRequiredMixin, generic.DeleteView):
     success_url = reverse_lazy("catalog:videogame_list")
 
 
-class BoardGameListView(LoginRequiredMixin, FilterView):
+class BoardGameListView(FilterView):
     model = BoardGame
     paginate_by = 10
     filterset_class = BoardGameFilter
     template_name = "catalog/boardgame_list.html"
 
 
-class BoardGameDetailView(LoginRequiredMixin, generic.DetailView):
+class BoardGameDetailView(generic.DetailView):
     model = BoardGame
     template_name = "catalog/boardgame_detail.html"
 
@@ -140,28 +140,28 @@ class BoardGameDeleteView(LoginRequiredMixin, generic.DeleteView):
     success_url = reverse_lazy("catalog:boardgame_list")
 
 
-class ConsoleTimelineView(LoginRequiredMixin, generic.ListView):
+class ConsoleTimelineView(generic.ListView):
     model = Console
     template_name = "catalog/timeline.html"
     paginate_by = 20
     ordering = ["release_year"]
 
 
-class ComputerTimelineView(LoginRequiredMixin, generic.ListView):
+class ComputerTimelineView(generic.ListView):
     model = Computer
     template_name = "catalog/timeline.html"
     paginate_by = 20
     ordering = ["release_year"]
 
 
-class VideoGameTimelineView(LoginRequiredMixin, generic.ListView):
+class VideoGameTimelineView(generic.ListView):
     model = VideoGame
     template_name = "catalog/timeline.html"
     paginate_by = 20
     ordering = ["release_year"]
 
 
-class BoardGameTimelineView(LoginRequiredMixin, generic.ListView):
+class BoardGameTimelineView(generic.ListView):
     model = BoardGame
     template_name = "catalog/timeline.html"
     paginate_by = 20
