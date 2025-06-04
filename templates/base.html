@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load i18n %}
-<html lang="{{ LANGUAGE_CODE }}">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,16 +28,6 @@
             {% else %}
             <a class="btn btn-outline-primary" href="{% url 'login' %}" aria-label="Login">{% trans "Login" %}</a>
             {% endif %}
-            <form action="{% url 'set_language' %}" method="post" class="ms-2">
-                {% csrf_token %}
-                <select name="language" onchange="this.form.submit()" class="form-select form-select-sm d-inline-block" style="width:auto">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
-                    {% for lang in LANGUAGES %}
-                    <option value="{{ lang.0 }}"{% if lang.0 == LANGUAGE_CODE %} selected{% endif %}>{{ lang.1 }}</option>
-                    {% endfor %}
-                </select>
-            </form>
         </div>
     </div>
 </nav>
