@@ -1,0 +1,13 @@
+{% extends 'catalog/base_list.html' %}
+{% block title %}Computers{% endblock %}
+{% block header %}Computers{% endblock %}
+{% block table_head %}<th>Name</th><th>Company</th><th>Year</th>{% endblock %}
+{% block table_body %}
+{% for obj in page_obj %}
+<tr>
+  <td><a href="{{ obj.get_absolute_url }}">{{ obj.name }}</a></td>
+  <td>{{ obj.company }}</td>
+  <td>{{ obj.release_year }}</td>
+</tr>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,7 @@
+crispy-bootstrap5==2025.4
+Django==5.2
+django-crispy-forms==2.4
+django-filter==25.1
+openai==1.84.0
+pillow==11.2.1
+sorl-thumbnail==12.11.0

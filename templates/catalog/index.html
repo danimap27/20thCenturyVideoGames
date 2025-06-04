@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Welcome to the Museum</h1>
+<ul>
+    <li><a href="{% url 'catalog:console_list' %}">Consoles</a></li>
+    <li><a href="{% url 'catalog:computer_list' %}">Computers</a></li>
+    <li><a href="{% url 'catalog:videogame_list' %}">Video Games</a></li>
+    <li><a href="{% url 'catalog:boardgame_list' %}">Board Games</a></li>
+</ul>
+{% endblock %}
