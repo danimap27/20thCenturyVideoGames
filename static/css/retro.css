@@ -9,6 +9,8 @@
   --crt-panel:   #233026; /* navbar, tarjetas */
   --card-bg:     #273627; /* card +1 tono    */
 
+  --header-bg:  #2c3e50; /* nuevo color cabecera */
+
   --crt-text:    #c6f9b9; /* texto base      */
   --crt-muted:   #9bd89e; /* subtítulos      */
   --crt-accent:  #ffb84d; /* naranja Atari   */
@@ -55,7 +57,7 @@ a:hover { opacity: .85; text-decoration: underline; }
 .navbar {
   display: flex;
   flex-wrap: wrap;            /* permite que se parta en 2 líneas */
-  background: var(--crt-panel);
+  background: var(--header-bg);
   padding: .5rem 1rem;
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
@@ -75,6 +77,11 @@ a:hover { opacity: .85; text-decoration: underline; }
   .navbar-brand   { font-size: 1rem; }
   .nav-link       { font-size: .75rem; }
   body            { font-size: 14px; }
+  .navbar-nav     { flex-direction: column; width: 100%; }
+}
+
+@media (max-width: 768px){
+  .navbar-nav { flex-direction: column; width: 100%; }
 }
 
 /* ==========  CONTENEDOR  ========== */
@@ -167,3 +174,7 @@ table, .form-control, .form-select {
 /* ==========  UTILIDADES  ========== */
 .text-accent { color: var(--crt-accent) !important; }
 .bg-panel   { background: var(--crt-panel) !important; }
+
+@media (max-width: 575px){
+  .card { margin-bottom: 1rem; }
+}
