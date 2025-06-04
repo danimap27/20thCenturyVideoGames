@@ -1,0 +1,51 @@
+[
+  {
+    "name": "3DO Creative BLASTER",
+    "year": 1993,
+    "description": "PC card (ISA slot) con un lector de CD-ROM a 2X y un mando de control que permitía jugar a juegos de 3DO en el ordenador.",
+    "system": "3DO-System",
+    "category": "consoles"
+  },
+  {
+    "name": "3DO Goldstar",
+    "year": 1993,
+    "description": "Los primeros modelos de Goldstar no funcionaba con algunos juegos.\r\nNorteamérica, Corea del Sur y Europa",
+    "system": "3DO-System",
+    "category": "consoles"
+  },
+  {
+    "name": "3DO Goldstar ALIVE II",
+    "year": 1993,
+    "description": "solo en Corea del Sur",
+    "system": "3DO-System",
+    "category": "consoles"
+  },
+  {
+    "name": "3DO Panasonic FZ-1 REAL",
+    "year": 1993,
+    "description": "3DO Interactive Multiplayer (comúnmente llamada la 3DO) fue una línea de videoconsolas lanzada en 1993 y 1994 por Panasonic, Sanyo y Goldstar LG Electronics. Las consolas fueron fabricadas según las especificaciones creadas por The 3DO Company, siendo originalmente diseñada por Dave Needle y RJ Mical de New Technology Group. El sistema fue concebido por el empresario y fundador de EA Games, Trip Hawkins.\n\r\nA pesar de su lanzamiento altamente promocionado y su avanzada tecnología, el alto precio de la consola ($699.95 en el lanzamiento) y el sobresaturado mercado de las consolas, condenó la 3DO al fracaso precipitado.\n\r\nLa primera consola 3DO en salir al mercado a un precio de $699,99 en los Estados Unidos.\r\nJapón, Asia, Norteamérica y Europa Nombre \t3DO Interactive Multiplayer\r\nFabricante  \tGoldstar\r\nOrigen  \tKorea\r\nAño  \t1993\r\nMandos  \tStandard DPad, 3 action buttons, L+R buttons, Start/Select, Head Phone Jack and volume control dial\r\nCPU  \t32 bit ARM60 RISC Processor\r\nVelocidad  \t12.5Mhz RISC CPU (roughly equivalent to a 25Mhz 68030)\r\nRAM  \t2 MB RDAM + 32 KB SRAM (battery backed up)\r\nVRAM  \t1 MB DRAM\r\nModo gráfico  \t640 x 480\r\nColores  \t16.7 million colors\r\nSonido  \tCustom DSP controller\r\nPuertos de entrada/salida  \tStereo audio output (2 x cinch), composite video output (cinch), Control Port for P2-P8 Daisy Chained, expansion slot and AV expansion port for adding the optional MPEG1\r\nAlmacenamiento  \tCD-ROMs\r\nNúmero de juegos  \tTons (Japan has the LARGEST library for 3DO games than anywhere. Some game where released as late as early 1999)\r\nFuente de alimentación  \tBuilt-in power supply\r\nPrecio  \t$399\r\nJapón, Asia, Norteamérica y EuropauP 8128",
+    "system": "3DO-System",
+    "category": "consoles"
+  },
+  {
+    "name": "3DO Panasonic FZ-10 REAL",
+    "year": 1993,
+    "description": "Menos cara que la FZ-1 y, además, era más pequeña\r\nNorteamérica, Europa y Japón",
+    "system": "3DO-System",
+    "category": "consoles"
+  },
+  {
+    "name": "3DO Sanyo TRY",
+    "year": 1993,
+    "description": "sólo Japón\r\nEl modelo más raro de 3DO",
+    "system": "3DO-System",
+    "category": "consoles"
+  },
+  {
+    "name": "Samsung 3DO",
+    "year": null,
+    "description": "Prototipo",
+    "system": "3DO-System",
+    "category": "consoles"
+  }
+]
