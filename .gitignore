@@ -3,5 +3,6 @@ __pycache__/
 *.sqlite3
 db.sqlite3
 media/
+*.mo
 /.venv
 .env
