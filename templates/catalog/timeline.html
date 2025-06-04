@@ -3,6 +3,11 @@
 {% load i18n %}
 {% block content %}
 <h1>{% trans "Timeline" %}</h1>
+<nav class="nav nav-pills mb-3">
+  <a class="nav-link {% if timeline_type == 'consoles' %}active{% endif %}" href="{% url 'catalog:console_timeline' %}">{% trans "Consoles" %}</a>
+  <a class="nav-link {% if timeline_type == 'computers' %}active{% endif %}" href="{% url 'catalog:computer_timeline' %}">{% trans "Computers" %}</a>
+  <a class="nav-link {% if timeline_type == 'videogames' %}active{% endif %}" href="{% url 'catalog:videogame_timeline' %}">{% trans "Video Games" %}</a>
+</nav>
 <ul class="list-group">
   {% for obj in object_list %}
   <li class="list-group-item">

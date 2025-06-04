@@ -146,6 +146,11 @@ class ConsoleTimelineView(generic.ListView):
     paginate_by = 20
     ordering = ["release_year"]
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["timeline_type"] = "consoles"
+        return context
+
 
 class ComputerTimelineView(generic.ListView):
     model = Computer
@@ -153,12 +158,22 @@ class ComputerTimelineView(generic.ListView):
     paginate_by = 20
     ordering = ["release_year"]
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["timeline_type"] = "computers"
+        return context
+
 
 class VideoGameTimelineView(generic.ListView):
     model = VideoGame
     template_name = "catalog/timeline.html"
     paginate_by = 20
     ordering = ["release_year"]
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["timeline_type"] = "videogames"
+        return context
 
 
 class BoardGameTimelineView(generic.ListView):
