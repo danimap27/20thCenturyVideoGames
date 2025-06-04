@@ -55,6 +55,19 @@ $ python manage.py runserver
 
 Accede a [http://127.0.0.1:8000](http://127.0.0.1:8000) y explora la colección.
 
+## 📥 Obtener datos de 20thCenturyVideoGames.com
+
+El proyecto incluye un *management command* para descargar una cantidad
+limitada de consolas u ordenadores desde la web original. Por ejemplo, para
+obtener dos sistemas de prueba:
+
+```bash
+$ python manage.py scrape_20thcv --category consoles --limit 2 --output sample_fixture.json
+```
+
+El comando genera un archivo JSON con los modelos encontrados que puedes cargar
+mediante `loaddata`.
+
 ## 🗂️ Estructura básica del proyecto
 
 ```
