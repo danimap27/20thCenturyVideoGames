@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 17:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+#: catalog/models.py:80
+msgid "Minutes"
+msgstr "Minutos"
+
+#: templates/base.html:7
+msgid "Century Video Games"
+msgstr "Videojuegos del Siglo XX"
+
+#: templates/base.html:18
+msgid "Museum"
+msgstr "Museo"
+
+#: templates/base.html:21 templates/catalog/console_list.html:3
+#: templates/catalog/console_list.html:4 templates/catalog/index.html:7
+msgid "Consoles"
+msgstr "Consolas"
+
+#: templates/base.html:22 templates/catalog/computer_list.html:3
+#: templates/catalog/computer_list.html:4 templates/catalog/index.html:8
+msgid "Computers"
+msgstr "Ordenadores"
+
+#: templates/base.html:23 templates/catalog/index.html:9
+#: templates/catalog/videogame_list.html:3
+#: templates/catalog/videogame_list.html:4
+msgid "Video Games"
+msgstr "Videojuegos"
+
+#: templates/base.html:24 templates/catalog/boardgame_list.html:3
+#: templates/catalog/boardgame_list.html:4 templates/catalog/index.html:10
+msgid "Board Games"
+msgstr "Juegos de mesa"
+
+#: templates/base.html:27
+msgid "Logout"
+msgstr "Salir"
+
+#: templates/base.html:29 templates/registration/login.html:4
+#: templates/registration/login.html:6
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: templates/catalog/base_detail.html:6 templates/catalog/boardgame_list.html:5
+#: templates/catalog/computer_list.html:5 templates/catalog/console_list.html:5
+msgid "Company"
+msgstr "Compañía"
+
+#: templates/catalog/base_detail.html:7 templates/catalog/boardgame_list.html:5
+#: templates/catalog/computer_list.html:5 templates/catalog/console_list.html:5
+#: templates/catalog/videogame_list.html:5
+msgid "Year"
+msgstr "Año"
+
+#: templates/catalog/base_detail.html:13
+msgid "No photos."
+msgstr "Sin fotos."
+
+#: templates/catalog/base_form.html:9
+msgid "Save"
+msgstr "Guardar"
+
+#: templates/catalog/base_list.html:8
+msgid "Filter"
+msgstr "Filtrar"
+
+#: templates/catalog/base_list.html:17
+msgid "Previous"
+msgstr "Anterior"
+
+#: templates/catalog/base_list.html:21
+msgid "Next"
+msgstr "Siguiente"
+
+#: templates/catalog/boardgame_form.html:3
+msgid "Board Game"
+msgstr "Juego de mesa"
+
+#: templates/catalog/boardgame_list.html:5
+#: templates/catalog/computer_list.html:5 templates/catalog/console_list.html:5
+#: templates/catalog/videogame_list.html:5
+msgid "Name"
+msgstr "Nombre"
+
+#: templates/catalog/computer_form.html:3
+msgid "Computer"
+msgstr "Ordenador"
+
+#: templates/catalog/confirm_delete.html:4
+msgid "Confirm delete"
+msgstr "Confirmar eliminación"
+
+#: templates/catalog/confirm_delete.html:5
+msgid "Are you sure you want to delete"
+msgstr "¿Estás seguro de que deseas eliminar"
+
+#: templates/catalog/confirm_delete.html:7
+msgid "Yes, delete"
+msgstr "Sí, eliminar"
+
+#: templates/catalog/console_form.html:3
+msgid "Console"
+msgstr "Consola"
+
+#: templates/catalog/index.html:3
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/catalog/index.html:5
+msgid "Welcome to the Museum"
+msgstr "Bienvenido al museo"
+
+#: templates/catalog/timeline.html:5
+msgid "Timeline"
+msgstr "Línea temporal"
+
+#: templates/catalog/videogame_form.html:3
+msgid "Video Game"
+msgstr "Videojuego"
+
+#: templates/catalog/videogame_list.html:5
+msgid "Platform"
+msgstr "Plataforma"
+
+#: templates/registration/logged_out.html:3
+#: templates/registration/logged_out.html:5
+msgid "Logged out"
+msgstr "Sesión cerrada"
+
+#: templates/registration/logged_out.html:6
+msgid "You have been logged out."
+msgstr "Has cerrado la sesión."
+
+#: templates/registration/logged_out.html:6
+msgid "Login again?"
+msgstr "¿Iniciar sesión de nuevo?"
+
+#: templates/registration/login.html:11
+msgid "Sign in"
+msgstr "Acceder"
