@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block content %}
+<h1>Timeline</h1>
+<ul class="list-group">
+  {% for obj in object_list %}
+  <li class="list-group-item">
+    {% with photo=obj.photos.first %}
+        {% if photo %}{% thumbnail photo.image "150x100" crop="center" as im %}<img src="{{ im.url }}" class="me-2" />{% endthumbnail %}{% endif %}
+    {% endwith %}
+    <a href="{{ obj.get_absolute_url }}">{{ obj.name }} ({{ obj.release_year }})</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

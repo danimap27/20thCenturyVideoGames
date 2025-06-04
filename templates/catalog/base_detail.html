@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block content %}
+<h1>{{ object.name }}</h1>
+<p><strong>Company:</strong> {{ object.company }}</p>
+<p><strong>Year:</strong> {{ object.release_year }}</p>
+{% for photo in object.photos.all %}
+    {% thumbnail photo.image "400x300" crop="center" as im %}
+        <img src="{{ im.url }}" alt="{{ photo.caption }}" class="img-fluid mb-2" />
+    {% endthumbnail %}
+{% empty %}
+    <p>No photos.</p>
+{% endfor %}
+<p>{{ object.description }}</p>
+{% endblock %}
