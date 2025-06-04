@@ -1,7 +1,8 @@
 {% extends 'catalog/base_list.html' %}
-{% block title %}Consoles{% endblock %}
-{% block header %}Consoles{% endblock %}
-{% block table_head %}<th>Name</th><th>Company</th><th>Year</th>{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Consoles" %}{% endblock %}
+{% block header %}{% trans "Consoles" %}{% endblock %}
+{% block table_head %}<th>{% trans "Name" %}</th><th>{% trans "Company" %}</th><th>{% trans "Year" %}</th>{% endblock %}
 {% block table_body %}
 {% for obj in page_obj %}
 <tr>
