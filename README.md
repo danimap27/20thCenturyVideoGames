@@ -71,22 +71,6 @@ Accede a [http://127.0.0.1:8000](http://127.0.0.1:8000) y explora la colección.
 
 Consulta el tablero de [GitHub Projects](https://github.com/users/danimap27/projects/5) para ver el progreso y las *issues* activas.
 
-## ❓ Solución de problemas
-
-Si al ejecutar `python manage.py runserver` aparece el error:
-
-```
-struct.error: unpack requires a buffer of 4 bytes
-```
-
-es probable que exista un archivo de traducciones compilado (`.mo`) dañado.
-Elimina los ficheros `*.mo` dentro de `locale/*/LC_MESSAGES/` y vuelve a
-compilarlos con:
-
-```bash
-django-admin compilemessages
-```
-
 ## 🤝 Contribuir
 
 1. Abre una *issue* para proponer cambio o reportar bug.
