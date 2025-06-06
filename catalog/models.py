@@ -68,7 +68,7 @@ class VideoGame(Collectible):
     developer = models.CharField(max_length=200)
     publisher = models.CharField(max_length=200)
     genre = models.CharField(max_length=100)
-
+    hola = True
     def get_absolute_url(self):
         from django.urls import reverse
         return reverse("catalog:videogame_detail", args=[self.pk])
